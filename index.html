@@ -19,6 +19,8 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+		<!--Подключаем animate.css--> 
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -27,15 +29,15 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-lg-7">
- 				<img class="header-img" src="img/main-img.png" alt="Монитор">
+ 				<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="Монитор">
  			</div>
  			<!-- /.col-7 -->
  			<div class="col-lg-5">
- 				<p class="header-pretitle">Веб-разработчик</p>
- 				<h1 class="header-title">Артемий Фурашов</h1>
- 				<p class="header-subtitle">Верстка на HTML/CSS <br>
+ 				<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+ 				<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Артемий Фурашов</h1>
+ 				<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>
 Разработка сайтов под ключ</p>
-				<div class="header-button-block">
+				<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
 					<a href="https://t.me/ArtemFurashov" class="header-button">Связаться</a>
 					<small>*Это бесплатно</small>
 				</div>
@@ -48,7 +50,7 @@
  </header>
 <section class="portfolio">
 	<div class="container">
-		<div class="portfolio-block">
+		<div class="portfolio-block wow fadeIn">
 		<h2 class="portfolio-title">Портфолио</h2>
 		<p class="portfolio-subtitle">Мои работы</p>
 		<div class="row">
@@ -90,10 +92,10 @@
 			<div class="col-md-4">
 				<div class="social-block">
 					<p>Подпишитесь</p>
-					<a href="https://www.facebook.com/artemij.furashov"><img src="img/facebook-logo-button.png" alt="facebook"></a>
-					<a href="https://vk.com/id9024603"><img src="img/vk-social-logotype.png" alt="vk"></a>
-					<a href="https://t.me/ArtemFurashov"><img src="img/telegram-symbol.png" alt="telegram"></a>
-					<a href="https://www.youtube.com"><img src="img/youtube-symbol.png" alt="youtube"></a>
+					<a class=" wow bounceInDown" data-wow-delay="0.1s"href="https://www.facebook.com/artemij.furashov"><img src="img/facebook-logo-button.png" alt="facebook"></a>
+					<a class=" wow bounceInDown" data-wow-delay="0.2s" href="https://vk.com/id9024603"><img src="img/vk-social-logotype.png" alt="vk"></a>
+					<a class=" wow bounceInDown" data-wow-delay="0.3s"href="https://t.me/ArtemFurashov"><img src="img/telegram-symbol.png" alt="telegram"></a>
+					<a class=" wow bounceInDown" data-wow-delay="0.4s"href="https://www.youtube.com"><img src="img/youtube-symbol.png" alt="youtube"></a>
 				</div>
 			</div>
 			<!-- /.col-4 -->
@@ -109,5 +111,10 @@
 	</div>
 	<!-- /.container -->
 </footer>
+<!-- Подключаем wow.min.js -->
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>		
 </body>
 </html>
